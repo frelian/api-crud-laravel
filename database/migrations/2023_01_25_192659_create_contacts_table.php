@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('phone');
             $table->string('email');
             $table->date('birthday');
-            $table->boolean('state', 1);
+            $table->boolean('state')->default(1);
             $table->text('notes')->nullable();
             $table->timestamps();
         });
